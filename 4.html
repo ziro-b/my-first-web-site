@@ -19,6 +19,15 @@
     <p><video width="560" height="315" controls>
             <source src="chunsikvideo.mp4" type="video/mp4">
         </video>
+        <script>
+            let video = document.getElementById("myVideo");
+        
+            video.play().then(() => {
+                video.pause(); // 재생 후 바로 정지 (첫 프레임 표시됨)
+            }).catch(error => {
+                console.log("자동 재생이 차단됨:", error);
+            });
+        </script>
         <br>우리 집에 온 지 얼마 안 된 아기 춘식이<br>짖지도 못하는게 이상한 소리만 내고 있다. 저 발 매트를 참 좋아했는데 이빨이 나기 시작하자 다 물어뜯어서 버려진 비운의 발 매트다.</p>
 </body>
 </html>
